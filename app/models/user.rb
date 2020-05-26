@@ -40,7 +40,8 @@ def activate
     update_columns(activated: FILL_IN, activated_at: FILL_IN)
     end
 
-def send_activation_email UserMailer.account_activation(self).deliver_now
+def send_activation_email
+    UserMailer.account_activation(self).deliver_now
     end
 
  def forget
