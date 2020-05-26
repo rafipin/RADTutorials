@@ -12,4 +12,6 @@ User.create!(name:      "Example User11",
                     email: email,
                     password: password,
                     password_confirmation: password) 
+                    activated: true,
+                    activated_at: Time.zone.now or activated_at: <%= Time.zone.now %>   
 end
